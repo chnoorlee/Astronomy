@@ -1,0 +1,17 @@
+{
+  "n_total_sources": 2373,
+  "n_members_raw": 1106,
+  "n_members_high_prob": 867,
+  "praesepe_label": 1,
+  "mean_pmra": -35.98702544335308,
+  "std_pmra": 1.1846640582080368,
+  "mean_pmdec": -12.892453972631152,
+  "std_pmdec": 0.9098137911934522,
+  "mean_parallax": 5.410711363302178,
+  "std_parallax": 0.13869948945042312,
+  "mean_distance_pc": 184.81858167161522,
+  "g_mag_range": [
+    6.152467,
+    19.904793
+  ]
+}
