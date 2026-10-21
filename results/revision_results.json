@@ -1,0 +1,273 @@
+{
+  "perspective_correction": {
+    "vr0_kms": 34.85540559930313,
+    "d0_pc": 184.81858167161522,
+    "sigma_a_uncorr_kms": 1.030781244782634,
+    "sigma_d_uncorr_kms": 0.7922740306808499,
+    "sigma_1d_uncorr_kms": 0.919295413424574,
+    "sigma_a_persp_kms": 0.7640478412256623,
+    "sigma_d_persp_kms": 0.5323393177202193,
+    "sigma_1d_persp_kms": 0.6584657367215182,
+    "fractional_reduction": 0.283727812511768,
+    "perspective_pm_gradient_max_masyr": 3.959818933129072
+  },
+  "rv_singlestar": [
+    {
+      "config": "all RV members",
+      "n": 333,
+      "n_clip": 287,
+      "sigma_raw": 11.448612530801928,
+      "sigma_clip": 1.8699042504213341,
+      "sigma_int": 0.0,
+      "mean_rv": 34.85540559930313,
+      "median_e_rv": 1.4681214
+    },
+    {
+      "config": "RUWE<1.2",
+      "n": 312,
+      "n_clip": 271,
+      "sigma_raw": 11.716088384674881,
+      "sigma_clip": 1.8563117415406152,
+      "sigma_int": 0.0,
+      "mean_rv": 34.86393759778598,
+      "median_e_rv": 1.44620415
+    },
+    {
+      "config": "RUWE<1.2 & e_RV<1",
+      "n": 125,
+      "n_clip": 116,
+      "sigma_raw": 1.759531927612473,
+      "sigma_clip": 0.9853072769341882,
+      "sigma_int": 0.8081091141297175,
+      "mean_rv": 34.74226282758621,
+      "median_e_rv": 0.50748163
+    },
+    {
+      "config": "RUWE<1.2 & e_RV<1.5",
+      "n": 161,
+      "n_clip": 153,
+      "sigma_raw": 1.6906910794478027,
+      "sigma_clip": 1.1152746179462991,
+      "sigma_int": 0.8004015711076228,
+      "mean_rv": 34.7915061372549,
+      "median_e_rv": 0.64175576
+    }
+  ],
+  "membership_5d": {
+    "have_hdbscan": true,
+    "n_5d": 927,
+    "overlap_with_3d": 841,
+    "jaccard_3d_5d": 0.8824763903462749,
+    "only_in_3d": 26,
+    "only_in_5d": 86,
+    "rt_deg": 4.309992149421502,
+    "n_3d_total": 867,
+    "n_3d_beyond_rt": 2,
+    "frac_3d_beyond_rt": 0.002306805074971165,
+    "rc_pc_spatial_filtered": 3.116219630184794,
+    "rt_pc_spatial_filtered": 13.683022776152956,
+    "rc_pc_fiducial": 3.079537882691995,
+    "rt_pc_fiducial": 13.902710510989708
+  },
+  "binary_monte_carlo": {
+    "alpha_obs_measured": 1.756358536803193,
+    "assumed_binary_fraction": 0.35,
+    "alpha_true_corrected": 1.7391290706135418,
+    "alpha_bias": 0.017229466189651266,
+    "per_binary_mass_overestimate": 1.0404872974477808,
+    "predicted_equal_mass_sequence_fraction": 0.1531,
+    "observed_equal_mass_sequence_fraction": 0.16116504854368932,
+    "total_mass_correction_factor": 1.1633132004011462,
+    "corrected_total_mass_msun": 483.31384698404884,
+    "fiducial_total_mass_msun": 415.4632190345535,
+    "mc_curve": [
+      {
+        "alpha_true": 1.0,
+        "alpha_obs_mean": 1.0183381186555833,
+        "alpha_obs_std": 0.03985454147740927
+      },
+      {
+        "alpha_true": 1.1,
+        "alpha_obs_mean": 1.1161876154282535,
+        "alpha_obs_std": 0.03619765542099089
+      },
+      {
+        "alpha_true": 1.2,
+        "alpha_obs_mean": 1.220513685293794,
+        "alpha_obs_std": 0.03687360070125117
+      },
+      {
+        "alpha_true": 1.3,
+        "alpha_obs_mean": 1.3270258022593497,
+        "alpha_obs_std": 0.02597460905546519
+      },
+      {
+        "alpha_true": 1.4,
+        "alpha_obs_mean": 1.4070871758874652,
+        "alpha_obs_std": 0.030867669698068756
+      },
+      {
+        "alpha_true": 1.5,
+        "alpha_obs_mean": 1.5062732202913969,
+        "alpha_obs_std": 0.03629584625026848
+      },
+      {
+        "alpha_true": 1.6,
+        "alpha_obs_mean": 1.622457922576266,
+        "alpha_obs_std": 0.03234596714183494
+      },
+      {
+        "alpha_true": 1.7,
+        "alpha_obs_mean": 1.7169639302498412,
+        "alpha_obs_std": 0.03900739372071918
+      },
+      {
+        "alpha_true": 1.8,
+        "alpha_obs_mean": 1.8176425457539829,
+        "alpha_obs_std": 0.040656100226464174
+      },
+      {
+        "alpha_true": 1.9,
+        "alpha_obs_mean": 1.9102378610732018,
+        "alpha_obs_std": 0.03513700635767694
+      },
+      {
+        "alpha_true": 2.0,
+        "alpha_obs_mean": 2.0524733372340425,
+        "alpha_obs_std": 0.0430826303625409
+      },
+      {
+        "alpha_true": 2.1,
+        "alpha_obs_mean": 2.088422262745624,
+        "alpha_obs_std": 0.046455485981320974
+      },
+      {
+        "alpha_true": 2.2,
+        "alpha_obs_mean": 2.2505347066517416,
+        "alpha_obs_std": 0.04484874808992226
+      },
+      {
+        "alpha_true": 2.3,
+        "alpha_obs_mean": 2.345060636932408,
+        "alpha_obs_std": 0.03864034603080614
+      },
+      {
+        "alpha_true": 2.4,
+        "alpha_obs_mean": 2.423330531034597,
+        "alpha_obs_std": 0.06915192860386014
+      },
+      {
+        "alpha_true": 2.5,
+        "alpha_obs_mean": 2.5306142695692775,
+        "alpha_obs_std": 0.07895169441533965
+      },
+      {
+        "alpha_true": 2.6,
+        "alpha_obs_mean": 2.6090003562507973,
+        "alpha_obs_std": 0.06774913940547792
+      },
+      {
+        "alpha_true": 2.7,
+        "alpha_obs_mean": 2.7483046829393007,
+        "alpha_obs_std": 0.08693306157668221
+      },
+      {
+        "alpha_true": 2.8,
+        "alpha_obs_mean": 2.819936478106735,
+        "alpha_obs_std": 0.06326530872028702
+      }
+    ]
+  },
+  "ellipticity_significance": {
+    "e_obs": 0.06844705245683913,
+    "e_bootstrap_err": 0.0324759464833094,
+    "significance_over_zero_sigma": 2.107623021611291,
+    "circular_null_mean_e": 0.04705958057119925,
+    "circular_null_std_e": 0.022746972154409507,
+    "significance_vs_circular_null_sigma": 0.9402337920167503,
+    "p_value_vs_circular_null": 0.1765
+  },
+  "extended_systematics": {
+    "alpha_fiducial": 1.756358536803193,
+    "total_mass_fiducial": 415.4632190345535,
+    "alpha_half_range": {
+      "distance": 0.009388563067373012,
+      "extinction": 0.0032801826128118217,
+      "isochrone": 0.11730421444312311,
+      "parallax_zp": 0.0012785240557244837
+    },
+    "total_mass_half_range": {
+      "distance": 2.7639321402972996,
+      "extinction": 1.071422551113244,
+      "isochrone": 47.937707557928064,
+      "parallax_zp": 0.7776531084950875
+    },
+    "rc_distance_half_range_pc": 0.07831370589332498,
+    "rt_distance_half_range_pc": 0.3535507025898097,
+    "rows": [
+      {
+        "variant": "fiducial",
+        "alpha": 1.756358536803193,
+        "total_mass_msun": 415.4632190345535,
+        "rc_pc": 3.079537882691995,
+        "rt_pc": 13.902710510989708
+      },
+      {
+        "variant": "distance +4.7 pc",
+        "alpha": 1.7353197899111201,
+        "total_mass_msun": 420.77986236477204,
+        "rc_pc": 3.15785158858532,
+        "rt_pc": 14.256261213579519
+      },
+      {
+        "variant": "distance -4.7 pc",
+        "alpha": 1.7540969160458662,
+        "total_mass_msun": 415.25199808417744,
+        "rc_pc": 3.00122417679867,
+        "rt_pc": 13.5491598083999
+      },
+      {
+        "variant": "E(B-V) +0.01",
+        "alpha": 1.7418110067257804,
+        "total_mass_msun": 417.84024782623453,
+        "rc_pc": 3.079537882691995,
+        "rt_pc": 13.902710510989708
+      },
+      {
+        "variant": "E(B-V) -0.01",
+        "alpha": 1.748371371951404,
+        "total_mass_msun": 415.69740272400804,
+        "rc_pc": 3.079537882691995,
+        "rt_pc": 13.902710510989708
+      },
+      {
+        "variant": "isochrone +0.05 dex",
+        "alpha": 1.5810302245392496,
+        "total_mass_msun": 466.15739884046775,
+        "rc_pc": 3.079537882691995,
+        "rt_pc": 13.902710510989708
+      },
+      {
+        "variant": "isochrone -0.05 dex",
+        "alpha": 1.8156386534254958,
+        "total_mass_msun": 370.2819837246116,
+        "rc_pc": 3.079537882691995,
+        "rt_pc": 13.902710510989708
+      },
+      {
+        "variant": "parallax ZP +0.02 mas",
+        "alpha": 1.759180061825104,
+        "total_mass_msun": 414.6876715809385,
+        "rc_pc": 3.079537882691995,
+        "rt_pc": 13.902710510989708
+      },
+      {
+        "variant": "parallax ZP -0.02 mas",
+        "alpha": 1.756623013713655,
+        "total_mass_msun": 416.2429777979287,
+        "rc_pc": 3.079537882691995,
+        "rt_pc": 13.902710510989708
+      }
+    ]
+  }
+}

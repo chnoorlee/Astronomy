@@ -1,0 +1,142 @@
+{
+  "extinction": {
+    "E_BV": 0.027,
+    "R_V": 3.1,
+    "coeff_AG_AV": 0.789,
+    "coeff_ABP_AV": 1.002,
+    "coeff_ARP_AV": 0.589,
+    "A_V": 0.0837,
+    "A_G_new": 0.0660393,
+    "E_BP_RP_new": 0.034568100000000004,
+    "A_G_old": 0.071,
+    "E_BP_RP_old": 0.035,
+    "alpha_old": 1.763508726456609,
+    "alpha_new": 1.7564954754140625,
+    "d_alpha_from_extinction_change": -0.0070132510425464645,
+    "total_mass_old": 415.94426452399887,
+    "total_mass_new": 415.4632190345535
+  },
+  "isochrone_gof": {
+    "n_single_star_ms": 102,
+    "colour_range": [
+      0.0,
+      3.0
+    ],
+    "median_offset_mag": -0.06337639528492378,
+    "robust_rms_mag": 0.11649302173125231,
+    "rms_mag": 0.12528349754501122,
+    "median_sigma_mg_mag": 0.007733081027965239,
+    "chi2": 27743.260650572138,
+    "dof": 101,
+    "reduced_chi2_mg_error_only": 274.6857490155657,
+    "best_vertical_shift_mag": -0.06337639528492378,
+    "rms_after_shift_mag": 0.10061987289382467,
+    "pearson_r": 0.993914272078738,
+    "frac_within_1sigma": 0.029411764705882353,
+    "frac_within_2sigma": 0.10784313725490197,
+    "frac_within_3sigma": 0.17647058823529413
+  },
+  "noise_field": {
+    "praesepe_members": {
+      "n": 1106,
+      "pmra_mean": -35.79928718173603,
+      "pmra_std": 1.8101869447107166,
+      "pmdec_mean": -12.791102027175747,
+      "pmdec_std": 1.2099899539040178,
+      "plx_mean": 5.387913736245599,
+      "plx_std": 0.22174138769240567
+    },
+    "noise_points": {
+      "n": 1078,
+      "pmra_mean": -32.26748435979018,
+      "pmra_std": 7.901925660765253,
+      "pmdec_mean": -13.058193933678155,
+      "pmdec_std": 8.099774056329126,
+      "plx_mean": 4.554970416943534,
+      "plx_std": 1.2247491073028796
+    },
+    "other_clusters": {
+      "n": 189,
+      "pmra_mean": -25.666268603777354,
+      "pmra_std": 3.2542257375253234,
+      "pmdec_mean": -13.707055853066572,
+      "pmdec_std": 5.620359988131064,
+      "plx_mean": 3.4558502090477905,
+      "plx_std": 0.37802941502202575
+    },
+    "n_noise_in_tight_praesepe_box": 1,
+    "frac_noise_clusterlike": 0.0009276437847866419
+  },
+  "inertia_tensor": {
+    "ra_c_deg": 130.00243373349105,
+    "dec_c_deg": 19.634586972122616,
+    "Ixx_deg2": 1.0713933156881668,
+    "Iyy_deg2": 1.029864758903433,
+    "Ixy_deg2": 0.07186458343258842,
+    "Ixx_pc2": 11.147947989508472,
+    "Iyy_pc2": 10.715839459114854,
+    "Ixy_pc2": 0.7477577344036405,
+    "eigval_major_deg2": 1.1254332725308132,
+    "eigval_minor_deg2": 0.9758248020607868,
+    "axis_ratio_q": 0.9311637288794433,
+    "ellipticity": 0.06883627112055668,
+    "position_angle_deg": -143.05795959967136
+  },
+  "bootstrap_recovery": {
+    "n_boot": 100,
+    "p_thresh": 0.7,
+    "recovery_core_p07_mean": 0.8280708661417324,
+    "recovery_core_p07_std": 0.21091621208739986,
+    "recovery_outer_p03_07_mean": 0.22942903752039148,
+    "recovery_outer_p03_07_std": 0.21758012217262118,
+    "recovery_core_member_mean": 0.9901968503937008,
+    "recovery_outer_member_mean": 0.9340619902120718,
+    "recovery_vs_radius": [
+      {
+        "r_inner_deg": 0.0,
+        "r_outer_deg": 0.5,
+        "n": 162,
+        "mean_recovery_p07": 0.6137654320987654,
+        "std_recovery_p07": 0.34336572201076476,
+        "mean_recovery_member": 0.9737037037037037,
+        "std_recovery_member": 0.08056811311232323
+      },
+      {
+        "r_inner_deg": 0.5,
+        "r_outer_deg": 1.0,
+        "n": 226,
+        "mean_recovery_p07": 0.5061061946902655,
+        "std_recovery_p07": 0.342202480112658,
+        "mean_recovery_member": 0.9656637168141593,
+        "std_recovery_member": 0.07958271820887199
+      },
+      {
+        "r_inner_deg": 1.0,
+        "r_outer_deg": 1.5,
+        "n": 196,
+        "mean_recovery_p07": 0.3906122448979592,
+        "std_recovery_p07": 0.32543633606230005,
+        "mean_recovery_member": 0.9519897959183672,
+        "std_recovery_member": 0.09974262745993516
+      },
+      {
+        "r_inner_deg": 1.5,
+        "r_outer_deg": 2.0,
+        "n": 148,
+        "mean_recovery_p07": 0.2554054054054054,
+        "std_recovery_p07": 0.26848266937470167,
+        "mean_recovery_member": 0.9397972972972971,
+        "std_recovery_member": 0.10816947160493108
+      },
+      {
+        "r_inner_deg": 2.0,
+        "r_outer_deg": 5.0,
+        "n": 135,
+        "mean_recovery_p07": 0.16888888888888887,
+        "std_recovery_p07": 0.23472179487140585,
+        "mean_recovery_member": 0.906888888888889,
+        "std_recovery_member": 0.15054698622598991
+      }
+    ]
+  }
+}

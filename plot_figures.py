@@ -58,10 +58,12 @@ RESULTS_DIR = os.path.join(os.path.dirname(__file__), '..', 'results')
 FIGURES_DIR = os.path.join(os.path.dirname(__file__), '..', 'paper', 'mypaper', 'figures')
 os.makedirs(FIGURES_DIR, exist_ok=True)
 
-# Praesepe extinction: E(B-V) ~ 0.027 (Taylor 2006), A_G ~ 0.07
+# Praesepe extinction: E(B-V)=0.027 (Taylor 2006). Gaia-band coefficients from
+# Wang & Chen (2019), R_V=3.1: A_G/A_V=0.789, A_BP/A_V=1.002, A_RP/A_V=0.589.
 E_BV = 0.027
-A_G = 3.1 * E_BV * 0.85  # A_G / A_V ~ 0.85 for Gaia G
-E_BP_RP = 1.31 * E_BV     # E(BP-RP) / E(B-V) ~ 1.31
+_A_V = 3.1 * E_BV
+A_G = 0.789 * _A_V                  # = 0.066 mag
+E_BP_RP = (1.002 - 0.589) * _A_V    # = 0.035 mag
 
 
 def _legend(ax, loc='upper right', bbox_to_anchor=None, fontsize=10.5, **kwargs):
@@ -129,7 +131,8 @@ def fig1_overview(df_all, df_mem, struct):
 
     # (a) Spatial distribution
     ax = axes[0, 0]
-    ax.scatter(field['ra'], field['dec'], s=1, c='#cccccc', alpha=0.3, rasterized=True, zorder=1)
+    ax.scatter(field['ra'], field['dec'], s=3, c='#9a9a9a', alpha=0.5, rasterized=True,
+               zorder=1, label='Field')
     sc = ax.scatter(mem['ra'], mem['dec'], s=10, c=mem['phot_g_mean_mag'],
                     cmap='viridis_r', alpha=0.85, edgecolors='none', rasterized=True, zorder=2)
     ax.plot(ra_c, dec_c, 'r+', ms=14, mew=2.5, zorder=3)
@@ -143,11 +146,14 @@ def fig1_overview(df_all, df_mem, struct):
 
     # (b) Vector-point diagram
     ax = axes[0, 1]
-    ax.scatter(field['pmra'], field['pmdec'], s=1, c='#cccccc', alpha=0.15, rasterized=True, zorder=1)
-    ax.scatter(mem['pmra'], mem['pmdec'], s=6, c='#2166ac', alpha=0.6, rasterized=True, zorder=2)
+    ax.scatter(field['pmra'], field['pmdec'], s=3, c='#9a9a9a', alpha=0.4, rasterized=True,
+               zorder=1, label='Field')
+    ax.scatter(mem['pmra'], mem['pmdec'], s=6, c='#2166ac', alpha=0.6, rasterized=True,
+               zorder=2, label='Members')
     ax.set_xlabel(r'$\mu_{\alpha*}$ (mas yr$^{-1}$)')
     ax.set_ylabel(r'$\mu_{\delta}$ (mas yr$^{-1}$)')
     ax.set_title('(b) Vector-Point Diagram')
+    _legend(ax, loc='upper left', bbox_to_anchor=(0.02, 0.98), fontsize=10.0, markerscale=2.5)
     ax.set_xlim(-50, -22)
     ax.set_ylim(-22, -2)
 

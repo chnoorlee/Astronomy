@@ -1,0 +1,320 @@
+{
+  "algorithm_comparison": {
+    "dbscan_eps": 0.18,
+    "metrics": [
+      {
+        "method": "HDBSCAN",
+        "n_selected": 867,
+        "overlap_with_hdbscan": 867,
+        "jaccard_with_hdbscan": 1.0,
+        "cmd_rms_mag": 0.34420875967714193,
+        "cmd_outlier_fraction": 0.22790697674418606,
+        "median_radius_deg": 1.1043500229453995
+      },
+      {
+        "method": "GMM",
+        "n_selected": 1025,
+        "overlap_with_hdbscan": 867,
+        "jaccard_with_hdbscan": 0.8458536585365853,
+        "cmd_rms_mag": 0.35249628305115815,
+        "cmd_outlier_fraction": 0.24778761061946902,
+        "median_radius_deg": 1.253241766831513
+      },
+      {
+        "method": "DBSCAN",
+        "n_selected": 1007,
+        "overlap_with_hdbscan": 867,
+        "jaccard_with_hdbscan": 0.8609731876861966,
+        "cmd_rms_mag": 0.35231940627073144,
+        "cmd_outlier_fraction": 0.24674022066198595,
+        "median_radius_deg": 1.2286653380629045
+      },
+      {
+        "method": "Astrometric cuts",
+        "n_selected": 947,
+        "overlap_with_hdbscan": 858,
+        "jaccard_with_hdbscan": 0.897489539748954,
+        "cmd_rms_mag": 0.3527014885408013,
+        "cmd_outlier_fraction": 0.2470713525026624,
+        "median_radius_deg": 1.1687341452438549
+      }
+    ]
+  },
+  "completeness_contamination": {
+    "probability_thresholds": [
+      {
+        "probability_threshold": 0.1,
+        "n_members": 1106,
+        "relative_recovery_vs_p01": 1.0,
+        "cmd_outlier_fraction": 0.2576853526220615,
+        "r90_deg": 3.1306033351812292
+      },
+      {
+        "probability_threshold": 0.2,
+        "n_members": 1001,
+        "relative_recovery_vs_p01": 0.9050632911392406,
+        "cmd_outlier_fraction": 0.24275724275724275,
+        "r90_deg": 2.555319845143914
+      },
+      {
+        "probability_threshold": 0.3,
+        "n_members": 867,
+        "relative_recovery_vs_p01": 0.7839059674502713,
+        "cmd_outlier_fraction": 0.22606689734717417,
+        "r90_deg": 2.2280317035241373
+      },
+      {
+        "probability_threshold": 0.5,
+        "n_members": 596,
+        "relative_recovery_vs_p01": 0.538878842676311,
+        "cmd_outlier_fraction": 0.20134228187919462,
+        "r90_deg": 2.0287760730062816
+      },
+      {
+        "probability_threshold": 0.7,
+        "n_members": 254,
+        "relative_recovery_vs_p01": 0.22965641952983726,
+        "cmd_outlier_fraction": 0.1732283464566929,
+        "r90_deg": 1.5788706827893046
+      },
+      {
+        "probability_threshold": 0.9,
+        "n_members": 80,
+        "relative_recovery_vs_p01": 0.07233273056057866,
+        "cmd_outlier_fraction": 0.175,
+        "r90_deg": 1.1909570446517301
+      }
+    ],
+    "magnitude_bins": [
+      {
+        "g_min": 6.0,
+        "g_max": 10.0,
+        "n_members": 63,
+        "n_raw_hdbscan_cluster": 71,
+        "relative_completeness": 0.8873239436619719,
+        "expected_field_interlopers": 0.0,
+        "contamination_fraction": 0.0
+      },
+      {
+        "g_min": 10.0,
+        "g_max": 12.0,
+        "n_members": 63,
+        "n_raw_hdbscan_cluster": 70,
+        "relative_completeness": 0.9,
+        "expected_field_interlopers": 0.7112937831885624,
+        "contamination_fraction": 0.011290377510929562
+      },
+      {
+        "g_min": 12.0,
+        "g_max": 14.0,
+        "n_members": 103,
+        "n_raw_hdbscan_cluster": 121,
+        "relative_completeness": 0.8512396694214877,
+        "expected_field_interlopers": 1.4225875663771248,
+        "contamination_fraction": 0.013811529770651696
+      },
+      {
+        "g_min": 14.0,
+        "g_max": 16.0,
+        "n_members": 163,
+        "n_raw_hdbscan_cluster": 188,
+        "relative_completeness": 0.8670212765957447,
+        "expected_field_interlopers": 3.556468915942812,
+        "contamination_fraction": 0.021818827705170626
+      },
+      {
+        "g_min": 16.0,
+        "g_max": 17.0,
+        "n_members": 143,
+        "n_raw_hdbscan_cluster": 171,
+        "relative_completeness": 0.8362573099415205,
+        "expected_field_interlopers": 0.7112937831885624,
+        "contamination_fraction": 0.004974082399920017
+      },
+      {
+        "g_min": 17.0,
+        "g_max": 18.0,
+        "n_members": 157,
+        "n_raw_hdbscan_cluster": 200,
+        "relative_completeness": 0.785,
+        "expected_field_interlopers": 5.690350265508499,
+        "contamination_fraction": 0.0362442692070605
+      },
+      {
+        "g_min": 18.0,
+        "g_max": 19.0,
+        "n_members": 139,
+        "n_raw_hdbscan_cluster": 218,
+        "relative_completeness": 0.6376146788990825,
+        "expected_field_interlopers": 4.267762699131374,
+        "contamination_fraction": 0.030703328770729312
+      },
+      {
+        "g_min": 19.0,
+        "g_max": 20.0,
+        "n_members": 36,
+        "n_raw_hdbscan_cluster": 67,
+        "relative_completeness": 0.5373134328358209,
+        "expected_field_interlopers": 1.4225875663771248,
+        "contamination_fraction": 0.03951632128825347
+      }
+    ]
+  },
+  "nonspherical_structure": {
+    "axis_ratio_q": 0.9315529475431609,
+    "ellipticity": 0.06844705245683913,
+    "ellipticity_bootstrap_err": 0.03319889147043948,
+    "position_angle_deg": -143.13558558012278,
+    "circular_rc_deg": 0.9546903884502841,
+    "circular_rt_deg": 4.309992149421502,
+    "elliptical_rc_deg": 1.0467386660225297,
+    "elliptical_rt_deg": 4.269301865652258,
+    "elliptical_chi2_red": 1.2213985325092305
+  },
+  "velocity_anisotropy": {
+    "profile": [
+      {
+        "r_inner_deg": 0.03792329434890605,
+        "r_outer_deg": 0.5281572427944347,
+        "r_mid_deg": 0.28304026857167036,
+        "n_stars": 174,
+        "sigma_radial_kms": 0.6226375371522964,
+        "sigma_tangential_kms": 0.637008355151097,
+        "beta_2d": -0.04669381570121045
+      },
+      {
+        "r_inner_deg": 0.5281572427944347,
+        "r_outer_deg": 0.9183853910326748,
+        "r_mid_deg": 0.7232713169135547,
+        "n_stars": 173,
+        "sigma_radial_kms": 0.7336050520203964,
+        "sigma_tangential_kms": 0.6526610600031985,
+        "beta_2d": 0.2085002591537155
+      },
+      {
+        "r_inner_deg": 0.9183853910326748,
+        "r_outer_deg": 1.3387497295026909,
+        "r_mid_deg": 1.1285675602676828,
+        "n_stars": 173,
+        "sigma_radial_kms": 0.6436149925225809,
+        "sigma_tangential_kms": 0.6935202351998392,
+        "beta_2d": -0.1610902287898095
+      },
+      {
+        "r_inner_deg": 1.3387497295026909,
+        "r_outer_deg": 1.8472300299419304,
+        "r_mid_deg": 1.5929898797223108,
+        "n_stars": 173,
+        "sigma_radial_kms": 0.648230686339806,
+        "sigma_tangential_kms": 0.5544384806054294,
+        "beta_2d": 0.26844403262105054
+      },
+      {
+        "r_inner_deg": 1.8472300299419304,
+        "r_outer_deg": 4.963302818747605,
+        "r_mid_deg": 3.405266424344768,
+        "n_stars": 174,
+        "sigma_radial_kms": 0.6565592383318598,
+        "sigma_tangential_kms": 0.667203700457458,
+        "beta_2d": -0.032687831146143376
+      }
+    ],
+    "n_possible_escapers": 12,
+    "escape_threshold_kms": 2.757886240273722
+  },
+  "mass_function_binaries": {
+    "n_mass_estimates": 865,
+    "mass_range_msun": [
+      0.09861866996427744,
+      2.5784222238940253
+    ],
+    "present_day_mass_function_alpha_0p16_1p2": 1.756358536803193,
+    "binary_sequence_candidates": 83,
+    "single_sequence_comparison": 432,
+    "cmd_binary_fraction": 0.16116504854368932
+  },
+  "dynamical_parameters": {
+    "photometric_mass_sum_msun": 415.4632190345535,
+    "half_mass_radius_pc": 3.562293883499419,
+    "mean_photometric_mass_msun": 0.48030429946191155,
+    "crossing_time_myr": 3.7897756990694256,
+    "half_mass_relaxation_time_myr": 100.43632011300379,
+    "age_over_trh_for_700myr": 6.969590275832586,
+    "jacobi_radius_pc_approx": 10.37301227712836,
+    "king_tidal_radius_pc": 13.902710510989708,
+    "virial_mass_msun": 6999.7024203777455
+  },
+  "systematic_error_budget": {
+    "variants": [
+      {
+        "source": "p >= 0.2",
+        "n_members": 1001,
+        "rc_pc": 3.185677397507556,
+        "rt_pc": 15.806146157289136,
+        "sigma_1d_kms": 1.0838836090214465,
+        "ellipticity": 0.07599582279849815
+      },
+      {
+        "source": "p >= 0.3",
+        "n_members": 867,
+        "rc_pc": 3.0795542278769745,
+        "rt_pc": 13.902680862290707,
+        "sigma_1d_kms": 0.919295413424574,
+        "ellipticity": 0.06844705245683913
+      },
+      {
+        "source": "p >= 0.5",
+        "n_members": 596,
+        "rc_pc": 3.014080433197537,
+        "rt_pc": 11.047929398978251,
+        "sigma_1d_kms": 0.7403608535416133,
+        "ellipticity": 0.07735580616476945
+      },
+      {
+        "source": "p >= 0.7",
+        "n_members": 254,
+        "rc_pc": 1.6071169732458819,
+        "rt_pc": 9.867398302650665,
+        "sigma_1d_kms": 0.5131667571930847,
+        "ellipticity": 0.1458105363241471
+      }
+    ],
+    "budget": [
+      {
+        "quantity": "n_members",
+        "fiducial": 867.0,
+        "min_over_tests": 254.0,
+        "max_over_tests": 1001.0,
+        "systematic_half_range": 373.5
+      },
+      {
+        "quantity": "rc_pc",
+        "fiducial": 3.0795542278769745,
+        "min_over_tests": 1.6071169732458819,
+        "max_over_tests": 3.185677397507556,
+        "systematic_half_range": 0.789280212130837
+      },
+      {
+        "quantity": "rt_pc",
+        "fiducial": 13.902680862290707,
+        "min_over_tests": 9.867398302650665,
+        "max_over_tests": 15.806146157289136,
+        "systematic_half_range": 2.9693739273192357
+      },
+      {
+        "quantity": "sigma_1d_kms",
+        "fiducial": 0.919295413424574,
+        "min_over_tests": 0.5131667571930847,
+        "max_over_tests": 1.0838836090214465,
+        "systematic_half_range": 0.2853584259141809
+      },
+      {
+        "quantity": "ellipticity",
+        "fiducial": 0.06844705245683913,
+        "min_over_tests": 0.06844705245683913,
+        "max_over_tests": 0.1458105363241471,
+        "systematic_half_range": 0.03868174193365398
+      }
+    ]
+  }
+}
